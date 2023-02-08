@@ -1,9 +1,8 @@
 @baseUrl = http://localhost:4000
-@resourceName = posts
+@resourceName = api/products
 
-# @name getAllCategory
-# GET {{baseUrl}}/{{resourceName}}
-PATCH {{baseUrl}}/api/bill/bills/1
+
+GET {{baseUrl}}/{{resourceName}}
 Content-Type: application/json
 
 {
@@ -12,18 +11,18 @@ Content-Type: application/json
 
 ###
 
-# @name filtersProducts
-GET {{baseUrl}}/{{resourceName}}?prices_gte=900
+# @name filtersProductsGreaterThan900kVND
+GET {{baseUrl}}/{{resourceName}}?price_gte=10
 Content-Type: application/json
-
-{
-    "body" : "le duc nghi"
-}
-
 
 ###
 
-# @name updateCategory
+# @name filterByCategory
+GET {{baseUrl}}/{{resourceName}}?category=best seller
+
+###
+
+# @name updateProduct
 PATCH  {{baseUrl}}/{{resourceName}}/2
 Content-Type: application/json
 

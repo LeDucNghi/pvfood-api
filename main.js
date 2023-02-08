@@ -53,7 +53,7 @@ routerDb.render = (req, res) => {
 
 // Start server
 
-server.use("/api/product", routerDb);
+server.use("/api", routerDb);
 
 const PORT = process.env.PORT || 4000;
 server.listen(PORT, () => {
