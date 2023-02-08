@@ -4,19 +4,13 @@
 
 ---
 
-# Bills api
-
-> https://pvfood-api.herokuapp.com/api/bill/bills
-
----
-
 # Products api
 
 > https://pvfood-api.herokuapp.com/api/product/products
 
-- **get products's items purchased with**
+- **get products's detail**
 
-> https://pvfood-api.herokuapp.com/api/product/products/${productId}/purchasedWith
+> https://pvfood-api.herokuapp.com/api/product/products/${id}
 
 - **get products's image tag**
 
@@ -25,21 +19,3 @@
 - **get products's review**
 
 > https://pvfood-api.herokuapp.com/api/product/products/${productId}/reviews
-
----
-
-# Users api
-
-> https://pvfood-api.herokuapp.com/api/user/users
-
----
-
-# Trash api
-
-> https://pvfood-api.herokuapp.com/api/trash/trash
-
----
-
-# Sales api
-
-> https://pvfood-api.herokuapp.com/api/sales/sales
