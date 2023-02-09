@@ -5,13 +5,9 @@
 GET {{baseUrl}}/{{resourceName}}
 Content-Type: application/json
 
-{
-  "status" : "Received"
-}
-
 ###
 
-# @name filtersProductsGreaterThan900kVND
+# @name filtersByPrice
 GET {{baseUrl}}/{{resourceName}}?price_gte=10
 Content-Type: application/json
 
@@ -27,10 +23,10 @@ PATCH  {{baseUrl}}/{{resourceName}}/2
 Content-Type: application/json
 
 {
-    "body" : "le duc nghi 2"
+  "body" : "le duc nghi 2"
 }
 
 ###
 
-# @name removeCategory
+# @name removeProduct
 DELETE {{baseUrl}}/{{resourceName}}/2
